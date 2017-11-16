@@ -1,0 +1,28 @@
+{
+    "name": "geeklearners/modalbox",
+    "description": "A modal box wrapper around bootstrap modal box for laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rahul Niraula",
+            "email": "rahul.niraula7@live.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Geeklearners\\Modal\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Geeklearners\\Modal\\ModalServiceProvider"
+            ],
+            "aliases": {
+                "Modal": "Geeklearners\\Modal\\ModalFacade"
+            }
+        }
+    }
+}
